@@ -27,7 +27,7 @@ function PersonList() {
     }
 
     this.loadList = function() {
-        self = this;
+        var self = this;
         $.ajax({
             url: 'save.php', 
             dataType: 'json'
