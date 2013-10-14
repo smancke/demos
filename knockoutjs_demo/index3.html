@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>knockout demo</title>
+
+    <script src="lib/jquery-2.0.3.min.js"></script>
+    <script src="lib/knockout-2.3.0.js"></script>
+  </head>
+  <body>
+    
+    <h3>Person Editieren: <span data-bind="text: person.fullName()"></span></h3>
+    <input id="firstname" type="text" name="fist" data-bind="value: person.first"/>
+    <input type="text" name="last" data-bind="value: person.last"/>
+    <br>
+    <a href="#" data-bind="click: add">Add</a>
+
+    <h3>Alle Personen</h3>
+    <table data-bind="foreach: persons">
+      <tr>
+        <td data-bind="text: first"/>
+        <td data-bind="text: last"/>
+      </tr>
+    </table>
+    <a href="#" data-bind="click: saveList">Save</a>
+    <a href="#" data-bind="click: loadList">Load</a>
+
+
+    <script src="index3.js"></script>
+  </body>
+</html>
