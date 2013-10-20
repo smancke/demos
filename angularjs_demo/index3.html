@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+  <head>
+    <title>angular demo</title>
+
+    <script src="lib/angular.min.js"></script>
+    <script src="index3.js"></script>
+  </head>
+  <body ng-controller="DemoCtrl">
+
+    <h3>Person Editieren: <span>{{person.first + ' ' + person.last}}</span></h3>
+    <input id="firstname" type="text" ng-model="person.first"/>
+    <input type="text" ng-model="person.last"/>
+    <br>
+    <a href="#" ng-click="add()">Add</a>
+
+    <h3>Alle Personen</h3>
+    <table ng-repeat="person in persons">
+      <tr>
+        <td>{{person.first}}</td>
+        <td>{{person.last}}</td>
+      </tr>
+    </table>
+    <a href="#" ng-click="saveList()">Save</a>
+    <a href="#" ng-click="loadList()">Load</a>
+
+  </body>
+</html>
