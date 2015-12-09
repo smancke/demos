@@ -31,11 +31,11 @@ Go to the grafana dashboard: <http://127.0.0.1:3000> and login with admin/admin
 ### Create a new Datasource with
 
 Name: demo
-Url: http://influxdb:8086
-Type: Influxdb 0.9.x
-Database: demo
-User: root
-Password: root
+  *Url:* http://influxdb:8086
+  *Type:* Influxdb 0.9.x
+  *Database:* demo
+  *User:* root
+  *Password:* root
 
 ### Creat a Dashboard
 
