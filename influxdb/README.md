@@ -25,6 +25,11 @@ docker-compose stop
 ./insert_simple_data.sh
 ```
 
+## Using the influx shell
+```
+sudo docker exec -it influxdb_influxdb_1 influx
+```
+
 ## Grafana
 Go to the grafana dashboard: <http://127.0.0.1:3000> and login with admin/admin
 
